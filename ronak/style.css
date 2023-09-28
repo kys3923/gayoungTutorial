@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans:300,400,600,700');
+
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 0.3s ease-out 0s;
+}
+
+#container {
+  padding: 0 1em;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, .9);
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1080px;
+  width: 100%;
+  padding: 1.25em 3em;
+}
+
+nav ul {
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 3em;
+}
+
+nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: .85em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav button {
+  border: none;
+  background-color: white;
+}
+
+.material-icons.menu {
+  display: block;
+  border: 1px solid black;
+  padding: 6px;
+  background-color: white;
+  font-size: 24px;
+}
+.material-icons.menu:hover {
+  cursor: pointer;
+}
+
+
+/* introBox */
+
+#introBox {
+  background-color: #FF0042;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 0 3em;
+}
+
+
+#introContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#introLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75em;
+  padding-top: 3em;
+}
+
+#introLeft h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  letter-spacing: -1.5px;
+  font-size: 2.5em;
+  color:white;
+}
+
+#introLeft h3 {
+  text-transform: capitalize;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  letter-spacing: -.5px;
+  font-size: 1.75em;
+  color:white;
+}
+
+#whiteBgBtn {
+  padding: .75em 2em;
+  color: #FF0042;
+  border: none;
+  font-size: 1.0125em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+#whiteBgBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+#introRight {
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/slider/1.png");
+  min-width: 280px;
+  width: 90%;
+  height: 100%;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 2em;
+}
+
+
+
+/* About Us */
+
+#title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+#title h1 {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 1.75em;
+  margin-bottom: .25em;
+}
+
+#redText {
+  color: #FF0042;
+}
+
+#aboutUs {
+  padding: 2.5em 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aboutUsContainer { 
+  padding: 0 .5em 2.5em .5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+#aboutUsImage {
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/banner/about.jpg");
+  width: 100%;
+  min-width: 380px;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutUsText {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#aboutUsText h1 {
+  font-size: 1.25em;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+#aboutUsText p {
+  line-height: 1.75em;
+  font-size: 0.95em;
+}
+
+#aboutUsText ol {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: item;
+}
+
+#aboutUsText ol li {
+  margin-bottom: .5em;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+#aboutUsText ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color:#FF0042;
+  margin-right: 1em;
+}
+
+#redButton {
+  padding: .75em 2em;
+  background-color: #FF0042;
+  color: white;
+  border: none;
+  font-size: 1.0125em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+#redButton:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+#play {
+  background-color: #FF0042;
+  border: none;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#play:hover {
+  cursor: pointer;
+}
+
+.material-icons.play {
+  color: white;
+  font-size: 3em;
+}
+
+/* portfolio */
+
+#OurPortfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#portfolioContainer {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#portfolioNav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
+}
+
+#portfolioNav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-transform: uppercase;
+  font-size: .85em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  gap: 1.5em;
+  padding: 0 0 2em 0;
+}
+
+#portfolioNav li {
+  border-bottom: 2px solid white;
+  padding: .5em 0;
+}
+
+#portfolioNav li:nth-child(1) {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #FF0042 50%, transparent 50%) 100% 1;
+  color: #FF0042;
+}
+
+#portfolioNav li:hover {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #FF0042 50%, transparent 50%) 100% 1;
+  color: #FF0042;
+
+}
+
+#imageGridContainer {
+  width: 100%;
+}
+
+#imageGridBox {
+  display: grid;
+  width: 100%;
+  gap: 1em;
+}
+
+#card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+#imageGridImage1 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/portfolio/equal/1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imageGridImage2 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/portfolio/equal/2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imageGridImage3 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/portfolio/equal/3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imageGridImage4 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/portfolio/equal/4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imageGridImage5 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/portfolio/equal/5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imageGridImage6 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/portfolio/equal/6.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imageGridImage7 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/portfolio/equal/7.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imageGridImage8 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/portfolio/equal/8.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imageGridImage9 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/portfolio/equal/9.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imageGridText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0;
+}
+
+#imageGridText h6 {
+  font-size: 1.25em;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+#imageGridText p {
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding-top: .5em;
+}
+
+/* Service */
+
+#OurService {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 0 ;
+}
+
+#serviceContainer {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cardIcon {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-icons.service {
+  font-size: 48px;
+  color: rgb(61, 61, 61);
+  background-color: white;
+  border-radius: 50%;
+}
+
+#cardIcon:hover .material-icons.service {
+  font-size: 24px;
+  background-color: #FF0042;
+  padding: .5em;
+  border-radius: 50%;
+  color: white;
+}
+
+#imageGridText p {
+  font-family: "Open Sans";
+  font-size: .85em;
+  text-align: center;
+}
+
+/* News */
+
+#LatestNews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#latestNewsContainer {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newsImage1 {
+  width: 100%;
+  aspect-ratio: 3 / 2 ;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/blog/blog-1.png")
+}
+
+#newsImage1 p {
+  padding: .5em;
+  width: 6em;
+  background-color: rgb(207, 210, 227);
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+
+#newsImage2 {
+  width: 100%;
+  aspect-ratio: 3 / 2 ;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/blog/blog-2.png")
+}
+
+#newsImage2 p {
+  padding: .5em;
+  width: 6em;
+  background-color: rgb(207, 210, 227);
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+#newsImage3 {
+  width: 100%;
+  aspect-ratio: 3 / 2 ;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: url("https://try.htmldemo.net/ronak-v1/assets/img/blog/blog-3.png")
+}
+
+#newsImage3 p {
+  padding: .5em;
+  width: 6em;
+  background-color: rgb(207, 210, 227);
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+#newsGridText {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#newsGridText h6 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+#newsGridText p {
+  font-weight: 600;
+  font-size: .85em;
+}
+
+#newsCard:hover :nth-child(1) {
+  background-size: 120%;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: white;
+}
+
+#footerTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #242424;
+  padding: 5em 0 ;
+  gap: 3em;
+}
+
+#footerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+#footerIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+#footerIcons p {
+  border: 1px solid white;
+  padding: .5em 1em;
+  border-radius: 50%;
+  font-size: .7em;
+}
+
+#footerIcons p:hover {
+  cursor: pointer;
+  color:#FF0042;
+  border: 1px solid #FF0042
+}
+
+#footerBottom {
+  background-color: #121212;
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: center;
+}
+
+#footerLocation {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+#footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+#footerEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.material-icons.footer {
+  font-size: 36px;
+}
+
+footer p {
+  font-size: .85em;
+  letter-spacing: 1px;
+}
+
+/* responsive */
+
+@media only screen and (min-width: 1080px) {
+  nav ul {
+    display: flex;
+  }
+  
+  .material-icons.menu {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 760px) {
+  #introContainer {
+    width: 1080px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #introLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .75em;
+    
+  }
+
+  #introBox {
+    background-color: #FF0042;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    padding: 0 3em;
+  }
+  
+  #introRight {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    min-width: 280px;
+    width: 35%;
+    height: 90%;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0;
+  }
+
+  #aboutUsContainer {
+    max-width: 1080px;
+    flex-direction: row;
+  }
+
+  #footerTop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media only screen and (min-width: 583px) {
+  #imageGridBox {
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-auto-columns: 50%; */
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+
+  #imageGridBox {
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-columns: 50%; */
+  }
+  
+  #footerTop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

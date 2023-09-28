@@ -1,0 +1,124 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  transition: ease-in-out;
+  transition-duration: .25s;
+}
+
+body {
+  padding: 1.5em;
+}
+
+@media only screen and (min-width: 800px) {
+
+  #bodyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #bodyContainer div {
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #title1 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #title2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+header {
+  padding: 2.2em;
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+header h1:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  font-weight: 300;
+  justify-content: center;
+}
+
+header ul li:hover {
+  cursor: pointer;
+}
+
+header button {
+  padding: 0;
+  border: none;
+  background-color: white;
+  font-size: 1em;
+  color: gray
+}
+
+header button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.75em;
+}
+
+#title1 {
+  margin-top: 4em;
+  font-weight: 400;
+}
+
+#title1:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+#title2 {
+  margin: 3em 0 2em 0;
+  font-weight: 400;
+  font-size: 1.75em;
+}
+
+#author {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 4px;
+  color: gray;
+  margin: 3em 0;
+  font-size: 0.75em;
+}
+
+#firstList {
+  padding-left: 1em;
+}
+
+#firstList li {
+  margin-bottom: 1em;
+  font-weight: 300;
+  font-size: 1.125em;
+}
